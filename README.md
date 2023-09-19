@@ -1,9 +1,10 @@
 <h1 aling="center">Presentación Desarrollo de Interfaces</h1>
 
 ![ejemplo de imagen](https://github.com/fatimafernandezponte/DID/assets/145338446/e1a691c9-6a29-4603-be70-4eafde649338)
-<p align="left">
-  <img scr="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
-</p>
+
+<h4 align="center">
+:construction: Proyecto en construcción :construction:
+</h4>
 
 ## Descripción del proyecto
 En esta asignatura nos centraremos en cómo desarrollar interfaces de forma adecuada y eficiente.
