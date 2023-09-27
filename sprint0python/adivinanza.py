@@ -1,53 +1,58 @@
+import random 
+
 cont = 0
 print ("Cada respuesta correcta suma 10 y cada respuesta inccorecta resta 5, suerte!")
 print("")
-print("Primera adivinanza:")
-print ("Para ser más elegante no usa guante ni chaqué solo cambia en un instante por una 'efe' la 'ge': ")
-print ("a. Gato.")
-print ("b. Elefante.")
-print ("c. León.")
-print("")
+eleccionLista = random.sample([1,2,3], k=2)
 
-respuesta = input("Introduce tu respuesta (a/b/c): ")
 
-if respuesta == "b": 
-    print("¡Has acertado!")
-    cont = cont + 10
-else: 
-    print ("No has acertado :(")
-    cont = cont -5
+if eleccionLista[0]==1 or eleccionLista[1]==1:
+    print("Primera adivinanza:")
+    print ("Para ser más elegante no usa guante ni chaqué solo cambia en un instante por una 'efe' la 'ge': ")
+    print ("a. Gato.")
+    print ("b. Elefante.")
+    print ("c. León.")
+    print("")
+    respuesta = input("Introduce tu respuesta (a/b/c): ")
+    if respuesta == "b": 
+        print("¡Has acertado!")
+        cont = cont + 10
+    else: 
+        print ("No has acertado :(")
+        cont = cont -5
 
-print("")
-print("Segunda adivinanza:")
-print("No muerde ni ladra, pero tiene dientes y la casa guarda. ¿Qué es?")
-print("a. Una llave")
-print("b. Un perro")
-print("c. Una puerta")
-print("")
-respuesta = input("Introduce tu respuesta (a/b/c): ")
+if eleccionLista[0]==2 or eleccionLista[1]==2:
+    print("")
+    print("Segunda adivinanza:")
+    print("No muerde ni ladra, pero tiene dientes y la casa guarda. ¿Qué es?")
+    print("a. Una llave")
+    print("b. Un perro")
+    print("c. Una puerta")
+    print("")
+    respuesta = input("Introduce tu respuesta (a/b/c): ")
+    if respuesta == "a": 
+        print("¡Has acertado!")
+        cont = cont + 10
+    else:
+        print("No has acertado :(")
+        cont = cont -5
 
-if respuesta == "a": 
-    print("¡Has acertado!")
-    cont = cont + 10
-else:
-    print("No has acertado :(")
-    cont = cont -5
+if eleccionLista[0]==3 or eleccionLista[1]==3:
+    print("")
+    print("Tercera adivinanza:")
+    print("¿Qué cosa es que entra en el río y o se moja?")
+    print("a. Los peces")
+    print("b. Los rayos del sol")
+    print("c. Las piedras")
+    print("")
+    respuesta = input("Introduce tu respuesta (a/b/c): ")
+    if respuesta == "b": 
+        print("¡Has acertado!")
+        cont = cont + 10
+    else: 
+        print ("No has acertado :(")
+        cont = cont -5
 
-print("")
-print("Tercera adivinanza:")
-print("¿Qué cosa es que entra en el río y o se moja?")
-print("a. Los peces")
-print("b. Los rayos del sol")
-print("c. Las piedras")
-print("")
-respuesta = input("Introduce tu respuesta (a/b/c): ")
-
-if respuesta == "b": 
-    print("¡Has acertado!")
-    cont = cont + 10
-else: 
-    print ("No has acertado :(")
-    cont = cont -5
 
 print("")
 print("¡Se acabó!")
