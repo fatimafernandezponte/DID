@@ -1,6 +1,6 @@
 import tkinter as tk
 
-
+#Creamos la ventana que se mostrará si clickas no
 def show_noWindow(self, no_root):
     self.no_root=no_root
     no_root.title("Casilla del no")

@@ -1,6 +1,6 @@
 import tkinter as tk
 
-
+#Creamos la ventana que se mostrará si clickas si
 def show_yesWindow(self, yes_root):
     self.yes_root= yes_root
     yes_root.title("Casilla del sí")
