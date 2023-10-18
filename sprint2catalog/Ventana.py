@@ -35,5 +35,4 @@ class MainWindow():
             label.grid(row=i, column=0)#para meterlos en una columna, lo anterior era fila
             label.bind("<Button-1>", lambda event, cell=cell: self.on_button_clicked(cell))#Este método escucha eventos sobre los widgets que estamos programando, para ver qué hacemos con él
 
-    
                         

@@ -1,4 +1,8 @@
 import tkinter as tk
+import threading
+import requests
+import json
+from Ventana import MainWindow
 
 class LoadingWindow:
     def __init__(self, root):
@@ -23,9 +27,12 @@ class LoadingWindow:
 
         self.update_progress_circle()
 
-        #Esto no lo usamos de momento
-        #self.thread = threading.Thread(target=self.fetch_json_data)
-        #self.thread.start()
+
+        #Ahora sí lo usamos
+        self.thread = threading.Thread(target=self.fetch_json_data)
+        self.thread.start()
+
+
 
     def draw_progress_circle(self, progress):
         self.canvas.delete("progress")
@@ -47,6 +54,35 @@ class LoadingWindow:
         
         self.draw_progress_circle(self.progress)
         self.root.after(100, self.update_progress_circle)
+
+
+    #Lanzo el hilo secundario: (ej 3)
+
+    #Aquí enviamos el contenido del json a la nueva ventana
+    def fetch_json_data(self):
+        response = requests.get("https://raw.githubusercontent.com/fatimafernandezponte/DID/3fa5eb3c53d323640d1cacd4111f1dfb0c4c9158/catalog.json")
+        if response.status_code == 200:
+            self.json_data = response.json()
+            self.finished=True
+            #Imprimimos el json para comprobar que se ha descargado
+            print(response.json())
+            #Aquí hacemos que se cierre la ventana de carga
+            self.root.quit()
+    def check_thread(self):
+            if self.finished:
+                self.root.destroy()
+                launch_main_window(self.json_data)
+            else:
+                 self.root.after(100,self.check_thread)
+
+    #Creamos aquí la nueva ventana
+def launch_main_window(json_data):
+        root =tk.Tk()
+        app = MainWindow(root,json_data)
+        root.mainloop()
+
+
+
         
 
         
