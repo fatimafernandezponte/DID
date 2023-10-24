@@ -1,14 +1,25 @@
 import tkinter as tk
-from tkinter import ttk
+from PIL import Image, ImageTk
 
-def DetailWindow(cell):
-    root = tk.Toplevel()
-    label1 = ttk.Label(root,image=cell.image_tk)
-    label2 = ttk.Label(root,text=cell.title)
-    label3 = ttk.Label(root,text=cell.description)
-    label1.pack()
-    label2.pack()
-    label3.pack()
-    root.mainloop()
+class DetailWindow:
+    def __init__(self, root, title, path, description):
+        self.root = root
+        root.title("Información")
+        
+        #para q dentro de la ventana emergente se visualice el título
+        self.title = tk.Label(root, text=title)
+        self.title.pack()
+
+        #para q dentro de la ventana emergente se visualice la descipción
+        self.description = tk.Label(root, text=description) 
+        self.description.pack()
+        
+        #para q dentro de la ventana emergente se visualice la imagen
+        self.path = tk.Label(root, image=path) 
+        self.path.pack()
+        
+        
+        root.title(title)
+
 
 
