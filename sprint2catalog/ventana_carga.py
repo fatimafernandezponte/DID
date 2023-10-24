@@ -31,6 +31,11 @@ class LoadingWindow:
         self.thread.start()
         if self.thread.is_alive():
              self.check_thread()
+        
+        #Con estas líneas ajustamos la ventana al centro de la pantalla
+        x = (self.root.winfo_screenwidth() - self.root.winfo_reqwidth()) / 2
+        y = (self.root.winfo_screenheight() - self.root.winfo_reqheight()) / 2
+        self.root.geometry(f"+{int(x)}+{int(y)}")
 
 
 

@@ -34,6 +34,11 @@ class MainWindow():
             label.grid(row=i, column=0) 
             label.bind("<Button-1>", lambda event, celda = cell: self.on_button_clicked(celda))
 
+        #Con estas líneas ajustamos la ventana al centro de la pantalla
+         x = (self.root.winfo_screenwidth() - self.root.winfo_reqwidth()) / 2
+         #En este caso, modificamos la y para que quede la altura más centrada
+         y = (self.root.winfo_screenheight() - 3*(self.root.winfo_reqheight())) / 2
+         self.root.geometry(f"+{int(x)}+{int(y)}")
             
     def load_image_from_url(self, url):
         response = requests.get(url)
