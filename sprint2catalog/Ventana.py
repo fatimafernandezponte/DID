@@ -35,10 +35,31 @@ class MainWindow():
             #Creo una celda para cada objeto(dato) y la incluyo en la lista
             self.datos.append(Cell(nombre,imagen,descripcion))
         
-         for i, cell in enumerate(self.datos):
-            label = tk.Label(root, image=cell.path, text=cell.title, compound=tk.BOTTOM)
-            label.grid(row=i, column=0) 
-            label.bind("<Button-1>", lambda event, celda = cell: self.on_button_clicked(celda))
+
+         #Creación de una scrollbar
+         self.canvas = tk.Canvas(self.root)
+         self.scrollbar = tk.Scrollbar(self.root, orient="vertical", command=self.canvas.yview) #Creamos la barra de desplazamiento y le proporcionamos una orientación
+         self.scrollable_frame = tk.Frame(self.canvas) #Esto es el contenedor del canvas
+
+         self.scrollable_frame.bind( #Con esto, cada vez que el frame cambie de tamaño, se actualiza la región de desplazamiento
+             "<Configure>",
+             lambda e: self.canvas.configure(
+                 scrollregion=self.canvas.bbox("all")
+             )
+         )
+
+         self.canvas.create_window((0, 0), window=self.scrollable_frame, anchor="nw") #Así colocamos el frame dentro del canvas
+         self.canvas.configure(yscrollcommand=self.scrollbar.set) #Así hacemos que se actualice la barra de desplazamiento cuando  se desplaza el canvas
+
+        #MODIFICADO EN EL 7 
+         for cell in self.datos:
+            self.add_item(cell)
+                  
+         self.canvas.grid(row=0, column=0, sticky="nsew") #Posiciona el canvas en la ventana principal y hace que se expanda con la ventana
+         self.scrollbar.grid(row=0, column=1, sticky="ns") #Posiciona la barra de desplazamiento al lado del canvas, hace que se pueda expandir en vertical
+
+         self.root.grid_rowconfigure(0, weight=1) #La fila va a pesar 1 y permite que se pueda redimensionar con la ventana
+         self.root.grid_columnconfigure(0, weight=1) #Lo mismo que lo anterior pero con columna
 
         #Aquí creamos el menú
          barra_menus = tk.Menu() #Instanciamos que va a haber un menú
@@ -54,15 +75,29 @@ class MainWindow():
 
 
         #Con estas líneas ajustamos la ventana al centro de la pantalla
-         x = (self.root.winfo_screenwidth() - self.root.winfo_reqwidth()) / 2
-         #En este caso, modificamos la y para que quede la altura más centrada
-         y = (self.root.winfo_screenheight() - 3*(self.root.winfo_reqheight())) / 2
+         #Modificamos creando variables para que tenga un tamaño concreto para poder mostrar el scrollbar
+         anchura=150
+         altura=230
+         self.root.geometry(f"{anchura}x{altura}")
+         x = (self.root.winfo_screenwidth() - anchura)/2
+         y = (self.root.winfo_screenheight() - altura)/2
          self.root.geometry(f"+{int(x)}+{int(y)}")
+
+    #EJERCICIO 7. Este método nos permite que se visualicen las imágenes al mismo tiempo que las encapsula dentro del frame
+    def add_item(self, cell):
+        frame = tk.Frame(self.scrollable_frame)
+        frame.pack(pady=10)
+
+        label = tk.Label(frame, image=cell.path, text=cell.title, compound=tk.BOTTOM)
+        label.grid(row=0, column=0) 
+        label.bind("<Button-1>", lambda event, celda = cell: self.on_button_clicked(celda))
             
     def load_image_from_url(self, url):
         response = requests.get(url)
         img_data = Image.open(BytesIO(response.content))
         img = ImageTk.PhotoImage(img_data)
         return img
+    
+    
     
     
