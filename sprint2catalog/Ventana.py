@@ -4,6 +4,7 @@ from PIL import Image, ImageTk
 from io import BytesIO
 from cell import Cell
 from detail_window import DetailWindow
+from tkinter import messagebox
 
 
 
@@ -11,7 +12,12 @@ class MainWindow():
     def on_button_clicked(self,cell):
         root = tk.Toplevel()
         detailWindow = DetailWindow(root, cell.title, cell.path, cell.description)
-        
+
+    #Lo utilizamos en  el menú
+    def acerca_de_presionado(self):
+            mensaje = "Fátima es una chica chulísima" #Este es el mensaje que se mostrará cuando clickes en "Acerca de"
+            messagebox.showinfo("Acerca de la desarrolladora", mensaje) #Al usar una coma, lo primero será el nombre de la ventana y lo segundo, el mensaje que se mostrará en ella, el que creamos arriba 
+    
     def __init__(self, root, json_data):
          self.root = root
          root.title("Listado")
@@ -33,6 +39,19 @@ class MainWindow():
             label = tk.Label(root, image=cell.path, text=cell.title, compound=tk.BOTTOM)
             label.grid(row=i, column=0) 
             label.bind("<Button-1>", lambda event, celda = cell: self.on_button_clicked(celda))
+
+        #Aquí creamos el menú
+         barra_menus = tk.Menu() #Instanciamos que va a haber un menú
+         menu_ayuda = tk.Menu(barra_menus, tearoff=False) #Elementos que aparecerán en el menú
+         menu_ayuda.add_command (
+             label = "Acerca de",
+             command=self.acerca_de_presionado, #Créalo
+         ) #Asignamos el valor y lo que va a hacer el elemento
+         barra_menus.add_cascade(menu=menu_ayuda, label="Ayuda") #Nombramos el menú y le añadimos el elemento que acabamos de crear
+         root.config(menu=barra_menus) #Con esto visualizamos el menú
+    
+        
+
 
         #Con estas líneas ajustamos la ventana al centro de la pantalla
          x = (self.root.winfo_screenwidth() - self.root.winfo_reqwidth()) / 2
