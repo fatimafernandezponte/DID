@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Aquí va a ir el RecyclerView
-        RecyclerView recyclerView = findViewById(R.id.recycler_view); //ESto no sé de donde lo saca
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
         Activity activity = this;
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
