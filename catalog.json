@@ -1,27 +1,42 @@
 [
   {
-    "name": "gatito",
-    "description": "El gato doméstico (Felis silvestris catus), llamado más comúnmente gato, y de forma coloquial minino, michino, michi, micho, mizo, miz, morroño o morrongo, y algunos nombres más, es un mamífero carnívoro de la familia Felidae.",
+    "name": "Gatito",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/gatito.jpg"
   },
   {
-    "name": "jirafita",
-    "description": "La jirafa (Giraffa camelopardalis) es una especie de mamífero artiodáctilo, de la familia Giraffidae propio de África. Es la más alta de todas las especies de animales terrestres existentes.",
+    "name": "Jirafita",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/jirafita.jpg"
   },
   {
-    "name": "leoncito",
-    "description": "El león (Panthera leo) es un mamífero carnívoro de la familia de los félidos y una de las cinco especies del género Panthera. Los leones salvajes viven en poblaciones cada vez más dispersas.",
+    "name": "Leoncito",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/leoncito.jpg"
   },
   {
-    "name": "patito",
-    "description":  "Pato es el nombre común para ciertas aves de la familia Anatidae, principalmente de la subfamilia Anatinae y dentro de ella del género Anas.",
+    "name": "Patito",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/patito.jpg"
   },
   {
-    "name": "quokka",
-    "description": "El quokka (Setonix brachyurus, /kwɒkə/)es un pequeño Macropodidae del tamaño de un gato doméstico. Es el único miembro del género Setonix.",
+    "name": "Quokka",
+    "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/quokka.jpg"
+  },
+  {
+    "name": "Gatito",
+    "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/gatito.jpg"
+  },
+  {
+    "name": "Jirafita",
+    "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/jirafita.jpg"
+  },
+  {
+    "name": "Leoncito",
+    "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/leoncito.jpg"
+  },
+  {
+    "name": "Patito",
+    "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/patito.jpg"
+  },
+  {
+    "name": "Quokka",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/quokka.jpg"
   }
 ]
