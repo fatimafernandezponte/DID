@@ -10,27 +10,27 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class Adapter extends RecyclerView.Adapter<GatitosViewHolder> {
+public class Adapter extends RecyclerView.Adapter<AnimalitosViewHolder> {
 
-    private List<GatitoData> allTheData;
+    private List<AnimalitosData> allTheData;
     private Activity activity;
 
     //El método constructor del Adapter recibe una lista con todos los datos a cargar.
-    public Adapter(List<GatitoData> dataset, Activity activity) {
+    public Adapter(List<AnimalitosData> dataset, Activity activity) {
         this.allTheData = dataset;
         this.activity = activity;
     }
 
     //Aquí creamos una celda.
-    public GatitosViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.gatito_view_holder, parent, false);
-        //Aquí invocamos el constructor de GatitosViewHolder
-        return new GatitosViewHolder(view);
+    public AnimalitosViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType){
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.animalitos_view_holder, parent, false);
+        //Aquí invocamos el constructor de AnimalitosViewHolder
+        return new AnimalitosViewHolder(view);
     }
 
     //Aquí le pasamos a la celda el contenido que debe mostrar según su posición, dependiendo de hasta dónde scrollee el usuario
-    public void onBindViewHolder(GatitosViewHolder holder, int position){
-        GatitoData dataIntPositionToBeRendered = allTheData.get(position);
+    public void onBindViewHolder(AnimalitosViewHolder holder, int position){
+        AnimalitosData dataIntPositionToBeRendered = allTheData.get(position);
         holder.showData(dataIntPositionToBeRendered, activity);
     }
 

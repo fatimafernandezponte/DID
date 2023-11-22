@@ -34,18 +34,18 @@ public class MainActivity extends AppCompatActivity {
         Activity activity = this;
         JsonArrayRequest request = new JsonArrayRequest(
                 Request.Method.GET,
-                "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/gatitos.json",
+                "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/catalog.json",
                 null,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
                         //Aquí escribimos el código
-                        //Iniciamos la variable List<GatitoData>
-                        List<GatitoData>  allTheGatitos = new ArrayList<>();
+                        //Iniciamos la variable List<AnimalitosData>
+                        List<AnimalitosData>  allTheGatitos = new ArrayList<>();
                         for(int i = 0; i < response.length(); i++){
                             try{
                                 JSONObject gatito = response.getJSONObject(i);
-                                GatitoData data = new GatitoData(gatito);
+                                AnimalitosData data = new AnimalitosData(gatito);
                                 allTheGatitos.add(data);
                             }catch(JSONException e){
                                 e.printStackTrace();

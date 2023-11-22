@@ -4,11 +4,11 @@ color black
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id gatito_image_view
-id gatito_name_text_view
+id animalito_image_view
+id animalito_name_text_view
 id recycler_view
 layout activity_main
-layout gatito_view_holder
+layout animalitos_view_holder
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
