@@ -4,10 +4,6 @@
         "source": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-main-34:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.myothercatalog.app-merged_res-32:/layout_animalitos_view_holder.xml.flat",
-        "source": "com.example.myothercatalog.app-main-34:/layout/animalitos_view_holder.xml"
-    },
-    {
         "merged": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-merged_res-32:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-main-34:\\drawable\\ic_launcher_foreground.xml"
     },
@@ -44,6 +40,10 @@
         "source": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-main-34:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.example.myothercatalog.app-merged_res-32:/layout_activity_detail.xml.flat",
+        "source": "com.example.myothercatalog.app-main-34:/layout/activity_detail.xml"
+    },
+    {
         "merged": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-merged_res-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -66,6 +66,10 @@
     {
         "merged": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-merged_res-32:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-main-34:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-merged_res-32:\\layout_activity_detail.xml.flat",
+        "source": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-main-34:\\layout\\activity_detail.xml"
     },
     {
         "merged": "C:\\Users\\Alumno\\.gradle\\daemon\\8.0\\com.example.myothercatalog.app-merged_res-32:\\layout_animalitos_view_holder.xml.flat",

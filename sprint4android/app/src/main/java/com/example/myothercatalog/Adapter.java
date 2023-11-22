@@ -1,6 +1,8 @@
 package com.example.myothercatalog;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,8 @@ public class Adapter extends RecyclerView.Adapter<AnimalitosViewHolder> {
 
     private List<AnimalitosData> allTheData;
     private Activity activity;
+
+
 
     //El método constructor del Adapter recibe una lista con todos los datos a cargar.
     public Adapter(List<AnimalitosData> dataset, Activity activity) {
@@ -32,6 +36,22 @@ public class Adapter extends RecyclerView.Adapter<AnimalitosViewHolder> {
     public void onBindViewHolder(AnimalitosViewHolder holder, int position){
         AnimalitosData dataIntPositionToBeRendered = allTheData.get(position);
         holder.showData(dataIntPositionToBeRendered, activity);
+
+        //EJERCICIO 2:
+        //Configuramos el OnClickListener para la celda
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //Obtenemos el elmento de datos en la posición clicada
+                int adapterPosition = holder.getAdapterPosition();
+                AnimalitosData elementoClickado = allTheData.get(adapterPosition);
+
+                //Iniciamos la actividad
+                Intent intent = new Intent(activity, DetailActivity.class); //Comprueba si el activity va bien
+                activity.startActivity(intent);
+            }
+        });
     }
 
     //Aquí devolvemos el número total de elementos de la lista

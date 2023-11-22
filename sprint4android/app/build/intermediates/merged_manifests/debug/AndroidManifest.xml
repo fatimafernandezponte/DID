@@ -30,6 +30,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyOtherCatalog" >
         <activity
+            android:name="com.example.myothercatalog.DetailActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.myothercatalog.MainActivity"
             android:exported="true" >
             <intent-filter>
