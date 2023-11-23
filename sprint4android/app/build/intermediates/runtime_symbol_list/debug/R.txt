@@ -4191,6 +4191,7 @@ int style CardView 0x7f100120
 int style CardView_Dark 0x7f100121
 int style CardView_Light 0x7f100122
 int style CustomTheme 0x7f10045f
+int style CustomTitles 0x7f100460
 int style MaterialAlertDialog_Material3 0x7f100123
 int style MaterialAlertDialog_Material3_Animation 0x7f100124
 int style MaterialAlertDialog_Material3_Body_Text 0x7f100125

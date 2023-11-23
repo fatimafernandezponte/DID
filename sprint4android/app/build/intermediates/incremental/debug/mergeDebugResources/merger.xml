@@ -11431,6 +11431,9 @@
         <item name="android:textStyle">bold</item>
         <item name="android:background">#FCACFF</item>
 
+    </style><style name="CustomTitles" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">italic</item>
     </style></file><file path="C:\msys64\home\Alumno\DID\sprint4android\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Base.Theme.MyOtherCatalog" parent="Theme.Material3.DayNight.NoActionBar">
         
         

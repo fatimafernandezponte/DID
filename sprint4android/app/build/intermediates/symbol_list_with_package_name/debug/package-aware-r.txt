@@ -4192,6 +4192,7 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style CustomTheme
+style CustomTitles
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Animation
 style MaterialAlertDialog_Material3_Body_Text
