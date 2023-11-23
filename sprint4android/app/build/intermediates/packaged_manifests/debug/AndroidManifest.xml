@@ -28,7 +28,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.MyOtherCatalog" >
+        android:theme="@style/CustomTheme" >
         <activity
             android:name="com.example.myothercatalog.DetailActivity"
             android:exported="false" />

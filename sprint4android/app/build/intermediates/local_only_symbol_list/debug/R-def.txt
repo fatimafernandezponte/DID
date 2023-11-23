@@ -18,6 +18,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 style Base.Theme.MyOtherCatalog
+style CustomTheme
 style Theme.MyOtherCatalog
 style circleImageView
 xml backup_rules

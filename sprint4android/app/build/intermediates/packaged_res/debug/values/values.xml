@@ -7,6 +7,15 @@
         
         
     </style>
+    <style name="CustomTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#3E1739</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
+        <item name="android:windowExitTransition">@android:transition/slide_left</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#FCACFF</item>
+
+    </style>
     <style name="Theme.MyOtherCatalog" parent="Base.Theme.MyOtherCatalog"/>
     <style name="circleImageView" parent="">
         <item name="cornerFamily">rounded</item>
