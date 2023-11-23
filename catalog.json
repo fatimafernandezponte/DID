@@ -1,42 +1,54 @@
 [
   {
     "name": "Gatito",
+    "description": "Los gatitos son unos animales cariñosos, pero independientes. Es importante saber darles su espacio, así como mantener este limpio, para mayor comodidad del animal.",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/gatito.jpg"
   },
   {
     "name": "Jirafita",
+    "description": "Las jirafas son unos animales muy grandes, con un cuello muy largo. Viven en la sabana y se alimentan de las hojas que consiguen de los árboles. Pese a su apariencia, son animales muy peligrosos.",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/jirafita.jpg"
   },
   {
     "name": "Leoncito",
+    "description": "Los leones disfrutan del título de rey de la selva. Pese a eso, son las leonas las que cazan, mientras que los leones se dedican a vaguear al sol con el resto de sus compañeros.",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/leoncito.jpg"
   },
   {
     "name": "Patito",
+    "description": "Los patitos viven en las charcas. Según salen del cascarón, se apegan a lo primero que ven, considerándolo su mamá y lo siguen allí a donde quiera que vaya.",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/patito.jpg"
   },
   {
     "name": "Quokka",
+    "description": "Los quokka son los animalitos más sonrientes del planeta. Viven en Australia Occidental, en las conocidas islas de los quokka y sonn muy redonditos y gorditos.",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/quokka.jpg"
   },
   {
     "name": "Gatito",
+    "description": "Los gatitos son unos animales cariñosos, pero independientes. Es importante saber darles su espacio, así como mantener este limpio, para mayor comodidad del animal.",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/gatito.jpg"
   },
   {
     "name": "Jirafita",
+    "description": "Las jirafas son unos animales muy grandes, con un cuello muy largo. Viven en la sabana y se alimentan de las hojas que consiguen de los árboles. Pese a su apariencia, son animales muy peligrosos.",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/jirafita.jpg"
   },
   {
     "name": "Leoncito",
+    
+    "description": "Los leones disfrutan del título de rey de la selva. Pese a eso, son las leonas las que cazan, mientras que los leones se dedican a vaguear al sol con el resto de sus compañeros.",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/leoncito.jpg"
   },
   {
     "name": "Patito",
+    
+    "description": "Los patitos viven en las charcas. Según salen del cascarón, se apegan a lo primero que ven, considerándolo su mamá y lo siguen allí a donde quiera que vaya.",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/patito.jpg"
   },
   {
     "name": "Quokka",
+    "description": "Los quokka son los animalitos más sonrientes del planeta. Viven en Australia Occidental, en las conocidas islas de los quokka y sonn muy redonditos y gorditos.",
     "image_url": "https://raw.githubusercontent.com/fatimafernandezponte/DID/main/quokka.jpg"
   }
 ]
