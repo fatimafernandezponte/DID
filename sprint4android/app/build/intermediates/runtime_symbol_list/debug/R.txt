@@ -3130,6 +3130,7 @@ int id autoComplete 0x7f080054
 int id autoCompleteToEnd 0x7f080055
 int id autoCompleteToStart 0x7f080056
 int id barrier 0x7f080057
+int id barrier2 0x7f0801f8
 int id baseline 0x7f080058
 int id beginOnFirstDraw 0x7f080059
 int id beginning 0x7f08005a
@@ -3186,6 +3187,7 @@ int id decor_content_parent 0x7f08008c
 int id default_activity_button 0x7f08008d
 int id deltaRelative 0x7f08008e
 int id dependency_ordering 0x7f08008f
+int id descripcion 0x7f0801f4
 int id design_bottom_sheet 0x7f080090
 int id design_menu_item_action_area 0x7f080091
 int id design_menu_item_action_area_stub 0x7f080092
@@ -3237,6 +3239,7 @@ int id fixed 0x7f0800bf
 int id flip 0x7f0800c0
 int id floating 0x7f0800c1
 int id forever 0x7f0800c2
+int id fotito 0x7f0801f5
 int id fragment_container_view_tag 0x7f0800c3
 int id frost 0x7f0800c4
 int id fullscreen_header 0x7f0800c5
@@ -3503,6 +3506,7 @@ int id time 0x7f0801c7
 int id title 0x7f0801c8
 int id titleDividerNoCustom 0x7f0801c9
 int id title_template 0x7f0801ca
+int id titulo 0x7f0801f6
 int id toggle 0x7f0801cb
 int id top 0x7f0801cc
 int id topPanel 0x7f0801cd
@@ -5012,6 +5016,7 @@ int style Widget_MaterialComponents_Toolbar_PrimarySurface 0x7f100459
 int style Widget_MaterialComponents_Toolbar_Surface 0x7f10045a
 int style Widget_MaterialComponents_Tooltip 0x7f10045b
 int style Widget_Support_CoordinatorLayout 0x7f10045c
+int style circleImageView 0x7f10045d
 int[] styleable ActionBar { 0x7f030047, 0x7f03004e, 0x7f03004f, 0x7f030139, 0x7f03013a, 0x7f03013b, 0x7f03013c, 0x7f03013d, 0x7f03013e, 0x7f030167, 0x7f03017a, 0x7f03017b, 0x7f03019b, 0x7f030211, 0x7f030219, 0x7f03021f, 0x7f030220, 0x7f030224, 0x7f030235, 0x7f03024b, 0x7f0302c8, 0x7f03034b, 0x7f03037d, 0x7f030384, 0x7f030385, 0x7f0303fb, 0x7f0303ff, 0x7f030484, 0x7f030492 }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1

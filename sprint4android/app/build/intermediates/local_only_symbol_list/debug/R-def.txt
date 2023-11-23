@@ -6,7 +6,11 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id animalito_image_view
 id animalito_name_text_view
+id barrier2
+id descripcion
+id fotito
 id recycler_view
+id titulo
 layout activity_detail
 layout activity_main
 layout animalitos_view_holder
@@ -15,5 +19,6 @@ mipmap ic_launcher_round
 string app_name
 style Base.Theme.MyOtherCatalog
 style Theme.MyOtherCatalog
+style circleImageView
 xml backup_rules
 xml data_extraction_rules

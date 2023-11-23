@@ -3131,6 +3131,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
+id barrier2
 id baseline
 id beginOnFirstDraw
 id beginning
@@ -3187,6 +3188,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descripcion
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3238,6 +3240,7 @@ id fixed
 id flip
 id floating
 id forever
+id fotito
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3504,6 +3507,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id titulo
 id toggle
 id top
 id topPanel
@@ -5013,6 +5017,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style circleImageView
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

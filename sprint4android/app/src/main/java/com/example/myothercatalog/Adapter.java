@@ -3,6 +3,7 @@ package com.example.myothercatalog;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,9 +48,17 @@ public class Adapter extends RecyclerView.Adapter<AnimalitosViewHolder> {
                 int adapterPosition = holder.getAdapterPosition();
                 AnimalitosData elementoClickado = allTheData.get(adapterPosition);
 
+                //Instanciamos la actividad
+                Intent intent = new Intent(activity, DetailActivity.class);
+                //EJERCICIO 3
+                //Utilizamos putExtra para pasar los datos a la DetailActivity
+                intent.putExtra("name", elementoClickado.getName());
+                intent.putExtra("description", elementoClickado.getDescription());
+                intent.putExtra("image_url", elementoClickado.getImageUrl());
                 //Iniciamos la actividad
-                Intent intent = new Intent(activity, DetailActivity.class); //Comprueba si el activity va bien
                 activity.startActivity(intent);
+
+
             }
         });
     }
